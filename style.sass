@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap')
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: 'Fira Code', monospace
+
+@mixin headfoot()
+    background-color: #AEB3C2
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 1rem
+
+body
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    height: 100vh
+    background-color: #30343F
+
+header
+    @include headfoot()
+    border-radius: 0 0 1rem 1rem
+
+main
+    width: 100%
+
+    .code-area
+        display: flex
+        justify-content: space-evenly
+        align-items: center
+        height: 500px
+        width: 100%
+        overflow: hidden
+
+        div
+            height: 100%
+            width: 500px
+
+            textarea, pre
+                height: 100%
+                width: 100%
+            
+            code
+                height: 100%
+                padding: 0
+
+            #plain-code
+                background-color: #AEB3C2
+                resize: none
+                border-radius: 1rem
+                padding: 1rem
+                font-size: 1rem
+                outline: none
+            
+            #snippet-code
+                padding: 1rem
+                border-radius: 1rem
+                font-size: 1rem
+                display: block
+
+footer
+    @include headfoot()
+    border-radius: 1rem 1rem 0 0
