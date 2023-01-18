@@ -32,7 +32,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 3rem;
 }
 main .code-area {
     display: flex;
@@ -57,6 +57,8 @@ main .code-area div textarea, main .code-area div pre {
 main .code-area div code {
     height: 100%;
     padding: 0;
+    width: auto;
+    overflow-x: visible;
 }
 
 main .code-area div:first-child {
@@ -77,6 +79,11 @@ main .code-area div #plain-code {
     outline: none;
     align-self: flex-start;
 }
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
 main .code-area div #snippet-code {
     border-radius: 1rem;
     font-size: 1rem;
@@ -85,7 +92,7 @@ main .code-area div #snippet-code {
     background: rgb(26, 27, 38);
     color: rgb(154, 165, 206);
     padding: 1rem;
-    width: auto;
+    width: 100%;
 }
 
 main .code-area div pre {
@@ -97,7 +104,31 @@ main .code-area div pre {
     justify-content: flex-start;
     align-items: flex-start;
     height: auto;
-    width: auto;
+    width: fit-content;
+    min-width: 500px;
+}
+
+main .code-area div pre ::-webkit-scrollbar {
+    display: none;
+}
+
+.options-area {
+    width: 100%;
+    background-color: #AEB3C2;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.options-area :is(button, select) {
+    padding: 0.5rem 1rem;
+    background-color: #30343F;
+    color: #AEB3C2;
+    border: none;
+    border-radius: 0.75rem;
 }
 
 footer {

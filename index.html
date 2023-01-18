@@ -8,10 +8,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CodeSnip</title>
 
-        <link rel="stylesheet" href="./style.css">
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/tokyo-night-dark.min.css">
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/tokyo-night-dark.min.css">
 
-        <script src="./main.js" defer></script>
+        <script src="./scripts/main.js" defer></script>
     </head>
 
     <body>
@@ -26,7 +26,9 @@
                     <textarea name="" id="plain-code" cols="30" rows="10"></textarea>
                 </div>
                 <div>
-                    <pre id="export-code"><code id="snippet-code"></code></pre>
+                    <div>
+                        <pre id="export-code"><code id="snippet-code"></code></pre>
+                    </div>
                 </div>
             </section>
 
@@ -49,7 +51,7 @@
             <small>VSV &copy All Rights Reserved</small>
         </footer>
 
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
         <script>hljs.highlightAll()</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </body>
