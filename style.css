@@ -93,6 +93,7 @@ main .code-area div #snippet-code {
     color: rgb(154, 165, 206);
     padding: 1rem;
     width: 100%;
+    height: calc(500px - 5rem);
 }
 
 main .code-area div pre {
